@@ -1,0 +1,28 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: 'pgvector'
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: admin
+    password: Admin@123
+  ai:
+    openai:
+      api-key: #input key here
+      embedding:
+        options:
+          model: 'text-embedding-ada-002'
+      chat:
+        options:
+          model: 'gpt-4'
+    vectorstore:
+      pgvector:
+        index-type: HNSW
+        distance-type: COSINE_DISTANCE
+        dimensions: 1536 #1536 is the default embedding dimension
+        remove-existing-vector-store-table: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
