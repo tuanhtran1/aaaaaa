@@ -1,0 +1,18 @@
+[
+  {
+    "partId": "A001",
+    "usage": [
+      { "date": "2024-12-01", "quantity": 2 },
+      { "date": "2024-11-15", "quantity": 5 },
+      { "date": "2024-11-01", "quantity": 3 }
+    ]
+  },
+  {
+    "partId": "C003",
+    "usage": [
+      { "date": "2024-12-01", "quantity": 0 },
+      { "date": "2024-11-15", "quantity": 12 },
+      { "date": "2024-11-01", "quantity": 15 }
+    ]
+  }
+]

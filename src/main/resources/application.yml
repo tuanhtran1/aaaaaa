@@ -8,20 +8,20 @@ spring:
     username: admin
     password: Admin@123
   ai:
-    openai:
-      api-key: #input key here
+    ollama:
+      base-url: 'http://localhost:11434'
       embedding:
-        options:
-          model: 'text-embedding-ada-002'
+        enabled: true
+        model: 'mxbai-embed-large'
       chat:
-        options:
-          model: 'gpt-4'
+        model: 'llama3.2'
+        enabled: true
     vectorstore:
       pgvector:
         index-type: HNSW
         distance-type: COSINE_DISTANCE
-        dimensions: 1536 #1536 is the default embedding dimension
-        remove-existing-vector-store-table: true
+        dimensions: 1024 #1536 is the default embedding dimension
+        remove-existing-vector-store-table: false
   jpa:
     hibernate:
       ddl-auto: update

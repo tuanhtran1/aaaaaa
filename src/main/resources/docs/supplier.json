@@ -1,0 +1,23 @@
+[
+  {
+    "supplierId": "SUP001",
+    "supplierName": "Nhà cung cấp X",
+    "partsSupplied": ["A001", "B002"],
+    "averageDeliveryTimeDays": 3,
+    "onTimeDeliveryRate": 0.95,
+    "price": {
+      "A001": 100,
+      "B002": 50
+    }
+  },
+  {
+    "supplierId": "SUP002",
+    "supplierName": "Nhà cung cấp Y",
+    "partsSupplied": ["C003"],
+    "averageDeliveryTimeDays": 7,
+    "onTimeDeliveryRate": 0.85,
+    "price": {
+      "C003": 150
+    }
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "documents": [
+      {
+        "inventory": [
+          {
+            "partId": "A001",
+            "partName": "Phụ tùng A",
+            "quantity": 5,
+            "averageMonthlyUsage": 20,
+            "lastRestockDate": "2024-11-30",
+            "expiryDate": "2025-12-31"
+          },
+          {
+            "partId": "B002",
+            "partName": "Phụ tùng B",
+            "quantity": 50,
+            "averageMonthlyUsage": 10,
+            "lastRestockDate": "2024-12-01",
+            "expiryDate": "2025-12-31"
+          },
+          {
+            "partId": "C003",
+            "partName": "Phụ tùng C",
+            "quantity": 0,
+            "averageMonthlyUsage": 15,
+            "lastRestockDate": "2024-10-15",
+            "expiryDate": "2025-12-31"
+          }
+        ]
+      },
+      {
+        "usageHistory": [
+          {
+            "partId": "A001",
+            "usage": [
+              {
+                "date": "2024-12-01",
+                "quantity": 2
+              },
+              {
+                "date": "2024-11-15",
+                "quantity": 5
+              },
+              {
+                "date": "2024-11-01",
+                "quantity": 3
+              }
+            ]
+          },
+          {
+            "partId": "C003",
+            "usage": [
+              {
+                "date": "2024-12-01",
+                "quantity": 0
+              },
+              {
+                "date": "2024-11-15",
+                "quantity": 12
+              },
+              {
+                "date": "2024-11-01",
+                "quantity": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "repairForecast": [
+          {
+            "vehicleModel": "Toyota Camry",
+            "repairDate": "2024-12-12",
+            "neededParts": [
+              {
+                "partId": "C003",
+                "quantity": 5
+              },
+              {
+                "partId": "A001",
+                "quantity": 3
+              }
+            ]
+          },
+          {
+            "vehicleModel": "Honda Civic",
+            "repairDate": "2024-12-14",
+            "neededParts": [
+              {
+                "partId": "B002",
+                "quantity": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "supplierInfo": [
+          {
+            "supplierId": "SUP001",
+            "supplierName": "Nhà cung cấp X",
+            "partsSupplied": [
+              "A001",
+              "B002"
+            ],
+            "averageDeliveryTimeDays": 3,
+            "onTimeDeliveryRate": 0.95,
+            "price": {
+              "A001": 100,
+              "B002": 50
+            }
+          },
+          {
+            "supplierId": "SUP002",
+            "supplierName": "Nhà cung cấp Y",
+            "partsSupplied": [
+              "C003"
+            ],
+            "averageDeliveryTimeDays": 7,
+            "onTimeDeliveryRate": 0.85,
+            "price": {
+              "C003": 150
+            }
+          }
+        ]
+      },
+      {
+        "warehouseCost": {
+          "costPerUnit": {
+            "A001": 5,
+            "B002": 3,
+            "C003": 4
+          },
+          "returnPolicy": {
+            "A001": "Returnable within 30 days",
+            "B002": "Returnable within 60 days",
+            "C003": "Non-returnable"
+          },
+          "promotionHistory": [
+            {
+              "partId": "C003",
+              "promotionDate": "2024-11-01",
+              "discount": 20,
+              "effectiveness": "High"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
